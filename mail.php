@@ -1,8 +1,9 @@
 <?php
+  {
     $to = 'denise.geiskkovitch@gmail.com';
     $firstname = $_POST["fname"];
     $email= $_POST["email"];
-    $text= $_POST["message"];
+    $subject = "Form submission";
 
 
 
@@ -12,10 +13,10 @@
 
     $message ='<table style="width:100%">
         <tr>
-            <td>'.$firstname.'  '.$laststname.'</td>
+            <td>'.$firstname.'</td>
         </tr>
         <tr><td>Email: '.$email.'</td></tr>
-        <tr><td>Email: '.$text.'</td></tr>
+
 
     </table>';
 
@@ -25,5 +26,6 @@
     }else{
         echo 'failed';
     }
-
+  
+  }
 ?>
