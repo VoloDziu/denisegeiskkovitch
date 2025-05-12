@@ -1865,6 +1865,7 @@ header {
 @media (max-width: 767px) {
   .header-top {
     padding: 15px 0;
+    
   }
 }
 
@@ -1891,19 +1892,6 @@ nav {
   text-align: center;
 }
 
-@media (max-width: 767px) {
-  nav {
-    margin-right: 0;
-    position: absolute;
-    right: 0;
-    top: 47px;
-    text-align: right;
-    padding: 20px 0;
-    z-index: 5;
-    background: #4b379a;
-  }
-}
-
 nav.hide {
   transform: scale(0);
 }
@@ -1917,11 +1905,11 @@ nav a {
   display: inline-block;
 }
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   nav a {
     margin: 5px 25px;
   }
-}
+} */
 
 nav a:hover {
   color: #000;
@@ -2040,8 +2028,10 @@ body {
   cursor: pointer;
 }
 
+
 .primary-btn:focus {
-  outline: none;
+  outline: #fff;
+  color: #fff;
 }
 
 .primary-btn span {
@@ -2049,6 +2039,7 @@ body {
   position: relative;
   z-index: 2;
 }
+
 
 .primary-btn:after {
   position: absolute;
@@ -2064,11 +2055,13 @@ body {
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   z-index: 1;
+ 
 }
 
 .primary-btn:hover {
   color: #fff;
   border: 1px solid transparent;
+  border-color: #fff;
 }
 
 .primary-btn:hover:after {
@@ -2320,17 +2313,20 @@ body {
 }
 
 .contact-form .alert-msg {
-  color: #fff !important;
+  color: #fff;
   margin-top: 50px;
   z-index: 1;
+  
 }
 
 .contact-form .primary-btn:hover {
   background: transparent;
 }
 
+
 .contact-form .primary-btn:hover span {
   color: #fff !important;
+  border: #000;
 }
 
 .common-input {
